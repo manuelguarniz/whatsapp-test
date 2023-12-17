@@ -124,4 +124,7 @@ To go further checkout:
 http://pm2.io/
 
 # pm2 ls
+
+# Listar todos los procesos
+sudo ps -efa
 ```

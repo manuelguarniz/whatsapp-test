@@ -8,7 +8,7 @@ const verifyToken = (req, res) => {
   try {
     const accessToken = 'b960b5b4-0d14-4b81-92ae-c5f7a39a80e3' //uuidv4()
     const token = req.query.hub?.verify_token
-    const challenge = req.body.hub?.challenge
+    const challenge = req.query.hub?.challenge
 
     console.log('token: ', token)
     console.log('challenge: ', challenge)
