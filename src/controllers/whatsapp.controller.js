@@ -1,5 +1,9 @@
 const { v4: uuidv4 } = require('uuid');
 
+const health = (req, res) => {
+  res.send(`OK: ${uuidv4()}`)
+}
+
 const verifyToken = (req, res) => {
   try {
     const accessToken = 'b960b5b4-0d14-4b81-92ae-c5f7a39a80e3' //uuidv4()
@@ -26,4 +30,5 @@ const receivedMessage = (req, res) => {
 module.exports = {
   verifyToken,
   receivedMessage,
+  health,
 }
