@@ -92,3 +92,36 @@ nvm install lts/*         ## install latest lts version
 
 nvm use default 
 ```
+
+### SSH
+
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+eval "$(ssh-agent -s)"
+```
+
+### PM2
+
+```npm
+npm install -g pm2
+
+pm2 start server app.js
+
+Start and Daemonize any application:
+$ pm2 start app.js
+
+Load Balance 4 instances of api.js:
+$ pm2 start api.js -i 4
+
+Monitor in production:
+$ pm2 monitor
+
+Make pm2 auto-boot at server restart:
+$ pm2 startup
+
+To go further checkout:
+http://pm2.io/
+
+# pm2 ls
+```
