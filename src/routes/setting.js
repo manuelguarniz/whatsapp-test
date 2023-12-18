@@ -3,6 +3,6 @@ const routes = express.Router()
 
 const settingController = require('./../controllers/setting.controller')
 
-routes.get('/webhook', settingController.verifyToken)
+routes.get('/health', settingController.health)
 
 module.exports = routes

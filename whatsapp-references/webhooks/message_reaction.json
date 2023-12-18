@@ -1,0 +1,40 @@
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+      {
+          "id": "156116987574877",
+          "changes": [
+              {
+                  "value": {
+                      "messaging_product": "whatsapp",
+                      "metadata": {
+                          "display_phone_number": "15550293848",
+                          "phone_number_id": "154532091068651"
+                      },
+                      "contacts": [
+                          {
+                              "profile": {
+                                  "name": "@mguarniz"
+                              },
+                              "wa_id": "51975757409"
+                          }
+                      ],
+                      "messages": [
+                          {
+                              "from": "51975757409",
+                              "id": "wamid.HBgLNTE5NzU3NTc0MDkVAgASGBYzRUIwQzk4OEFBQUQxNkU0OTU0QjkyAA==",
+                              "timestamp": "1702826439",
+                              "type": "reaction",
+                              "reaction": {
+                                  "message_id": "wamid.HBgLNTE5NzU3NTc0MDkVAgASGBYzRUIwMTFEN0NFQjk5MjEyMkE0REIyAA==",
+                                  "emoji": "👍"
+                              }
+                          }
+                      ]
+                  },
+                  "field": "messages"
+              }
+          ]
+      }
+  ]
+}

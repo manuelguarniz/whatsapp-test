@@ -2,6 +2,19 @@
 
 1. Nodejs
 2. Config: https://developers.facebook.com/apps/1480697792664439/whatsapp-business/wa-dev-quickstart/?business_id=729528544078796
+3. node --env-file=.env app.js
+
+## AWS Lambda
+
+ref: https://console.aws.amazon.com/xray/home#/service-map
+
+config:
+
+```bash
+serverless config credentials --provider aws --key AWS_KEY --secret AWS_SECRET
+
+✔Profile"default"hasbeenconfigured
+```
 
 ## Server deploy
 
@@ -74,8 +87,6 @@ nginx -t
 sudo systemctl restart nginx
 ```
 
-
-
 ### Config NodeJS
 
 ```bash
@@ -103,7 +114,7 @@ eval "$(ssh-agent -s)"
 
 ### PM2
 
-```npm
+```bash
 npm install -g pm2
 
 pm2 start server app.js
@@ -125,6 +136,6 @@ http://pm2.io/
 
 # pm2 ls
 
-# Listar todos los procesos
-sudo ps -efa
+# Listar todos los procesos nodejs
+sudo ps -efa | grep 'index.js'
 ```
